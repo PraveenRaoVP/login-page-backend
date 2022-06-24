@@ -1,0 +1,19 @@
+<h1>Login</h1>
+
+<% if(messages.error) { %>
+    <%=messages.error %>
+<% } %>
+<form action="/login" method="post">
+    <div class="login-fields">
+        <label for="name">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Enter your email...">
+    </div>
+    <div class="login-fields">
+        <label for="name">Password</label>
+        <input type="password" name="password" id="password" required placeholder="Enter your password...">
+    </div>
+    <button type="submit">Login</button>
+
+</form>
+
+<a href="/register">Register</a>
